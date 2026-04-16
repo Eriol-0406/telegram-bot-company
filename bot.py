@@ -13,7 +13,7 @@ WEBSITE_URL = os.getenv("WEBSITE_URL","https://www.ccacc.io/")
 X_URL = os.getenv("X_URL","https://x.com/ccacc_hub")
 INSTAGRAM_URL = os.getenv("INSTAGRAM_URL","https://www.instagram.com/ccacc_hub")
 
-3 Logging setup
+#3 Logging setup
 logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(message)s",
     level=logging.INFO,
