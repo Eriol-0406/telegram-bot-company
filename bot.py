@@ -49,7 +49,7 @@ async def welcome_new_member(update: Update, context: ContextTypes.DEFAULT_TYPE)
         chat_id = update.effective_chat.id
         name = memeber.first_name or member.username or "Builder"
 
-        logger.info(f"New member joined: {name} (id={member.id})
+        logger.info(f"New member joined: {name} (id={member.id})")
 
 # Case 1: No username set
 # Username check always fires regardless of cooldown
