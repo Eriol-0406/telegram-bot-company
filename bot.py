@@ -63,7 +63,7 @@ if not member.username:
                     f"Go to: Telegram Settings → Edit Profile → Username"
                 ),
             )
-            logger.info(f"{name} has no username — prompted to set one.")
+            logger.info(f"{name} has no username, prompted to set one.")
             continue
 
         # ── Case 2: Has username but cooldown not over ─────────────────────────
