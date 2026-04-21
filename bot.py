@@ -11,6 +11,7 @@ BOT_TOKEN     = os.getenv("BOT_TOKEN")
 WEBSITE_URL   = os.getenv("WEBSITE_URL", "https://www.ccacc.io/")
 X_URL         = os.getenv("X_URL", "https://x.com/ccacc_hub")
 INSTAGRAM_URL = os.getenv("INSTAGRAM_URL", "https://www.instagram.com/ccacc_hub")
+BANNER_URL = os.getenv("BANNER_URL", "https://github.com/Eriol-0406/telegram-bot-company/blob/main/welcome_banner.jpeg")
 
 # Logging setup
 logging.basicConfig(
@@ -84,14 +85,12 @@ async def welcome_new_member(update: Update, context: ContextTypes.DEFAULT_TYPE)
             f"through capital, acceleration, and compliance."
         )
 
-        banner_path = "welcome_banner.png"
-        if os.path.exists(banner_path):
-            with open(banner_path, "rb") as photo:
-                await context.bot.send_photo(
-                    chat_id=chat_id,
-                    photo=photo,
-                    caption=welcome_text,
-                )
+        if BANNER_URL:
+            await context.bot.send_photo(
+                chat_id=chat_id,
+                photo=BANNER_URL,
+                caption=welcome_text,
+            )
         else:
             await context.bot.send_message(
                 chat_id=chat_id,
