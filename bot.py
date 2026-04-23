@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 # In-memory cooldown tracker { chat_id: datetime }
 last_welcome_sent: dict[int, datetime] = {}
-COOLDOWN_HOURS = 0.5
+COOLDOWN_HOURS = 0.02
 
 
 def is_cooldown_over(chat_id: int) -> bool:
