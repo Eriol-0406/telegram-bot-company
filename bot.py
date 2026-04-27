@@ -11,7 +11,7 @@ BOT_TOKEN     = os.getenv("BOT_TOKEN")
 WEBSITE_URL   = os.getenv("WEBSITE_URL", "https://www.ccacc.io/")
 X_URL         = os.getenv("X_URL", "https://x.com/ccacc_hub")
 INSTAGRAM_URL = os.getenv("INSTAGRAM_URL", "https://www.instagram.com/ccacc_hub")
-FORM_URL = os.getenv("FORM_URL", "https://forms.gle/xxsD9nFowuFYmN7s5")
+FORM_URL = os.getenv("FORM_URL", "https://forms.gle/RUa2FBhRDiJjHu199")
 BANNER_URL = os.getenv("BANNER_URL", "https://raw.githubusercontent.com/Eriol-0406/telegram-bot-company/main/welcome_banner.jpeg")
 
 # Logging setup
